@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Inicio</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contenido.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!--Header - menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Smart<b>Pick</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"> <i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="../pages/productos.html"> <i class='bx bxs-cabinet'></i>Productos</a></li>
+                        <li class="menu-selected"><a href="../pages/contacto.html" class="text-menu-selected">
+                                <i class="fas fa-file-alt"></i>Contacto</a></li>
+                        <li><a href="../pages/contacto.html#ayuda"> <i class="fas fa-headset"></i>Ayuda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="ctn-icon-search">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <div id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+    </div>
+    <ul id="resultado-busqueda"></ul>
+
+    <div id="cover-ctn-search"></div>
+
+    <div class="container-all" id="move-content">
+        
+
+        <main>
+            <h1>Nuestros Productos</h1>
+            <span class="linea"></span>
+            <section class="galeria">
+                <a href="#image1"><img src="../img/productos/smart-locker.png" alt=""></a>
+                <a href="#image2"><img src="../img/productos/smart-locker 2.png" alt=""></a>
+                <a href="#image3" "><img src=" ../img/productos/smart-locker 3.png" alt=""></a>
+                <a href="#image4"><img src="../img/productos/smart-locker 4.png" alt=""></a>
+                <a href="#image5"><img src="../img/productos/smart-locker 5.png" alt=""></a>
+            
+            </section>
+            <article class="light-box" id="image1">
+                <a href="#imagen2" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+                <img src="../img/productos/smart-locker.png" alt="">
+                <a href="#imagen5" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+                <a href="#" class="close">X</a>
+            </article>
+        </main>
+
+    </div>
+    <div class="container-footer">
+
+        <footer>
+            <div class="logo-footer">
+                <img src="../img/logo.png" alt="">
+            </div>
+
+            <div class="redes-footer">
+                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+            </div>
+
+            <hr>
+            <h4>© 2023 SmartPick - Todos los Derechos Reservados</h4>
+
+        </footer>
+
+    </div>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/buscador.js"></script>
+</body>
+
+</html>
