@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contenido.css">
+    <link rel="stylesheet" href="css/breadcrumbs.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,10 +33,11 @@
                     <ul>
                         <li><a href="./index.html"> <i class="fas fa-home"></i> Inicio</a></li>
                         <li><a href="./pages/productos.html"> <i class='bx bxs-cabinet'></i>Productos</a></li>
-                        <li class="menu-selected"><a href="./pages/contacto.html" class="text-menu-selected">
+                        <li><a href="./pages/contacto.html">
                                 <i class="fas fa-file-alt"></i>Contacto</a></li>
                         <li><a href="./pages/contacto.html#ayuda"> <i class="fas fa-headset"></i>Ayuda</a></li>
                     </ul>
+
                 </nav>
             </div>
             <div id="ctn-icon-search">
@@ -46,12 +48,24 @@
             <i class="fas fa-bars"></i>
         </div>
     </header>
+
     <div id="ctn-bars-search">
         <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
     </div>
     <ul id="resultado-busqueda"></ul>
-    
-    <div id="cover-ctn-search"></div>
+    <div id="no-results-message" style="display: none;">No se encontraron resultados.</div>
+
+    <div id="cover-ctn-search">
+
+    </div>
+    <section class="breadcrumb flat">
+        <div>
+            <a href="./index.html" class="active">Inicio</a>
+            <a href="./pages/productos.html" class="a">Productos</a>
+            <a href="./pages/contacto.html" class="a">Contacto</a>
+            <a href="./pages/contacto.html#ayuda" class="a">Ayuda</a>
+        </div>
+    </section>
 
     <div class="container-all" id="move-content">
         <div class="blog-container-cover">
@@ -61,6 +75,8 @@
                 </p>
             </div>
         </div>
+
+        
         <main>
             <section class="contenido">
                 <h2 class="subtitulo">Ventajas de nuestro Servicio </h2>
@@ -76,14 +92,16 @@
                         <div class="servicio">
                             <h3 class="nservicio"><span class="num">2</span>Expande tu horario de Atención </h3>
                             <p>
-                            Ofrece a los clientes la posibilidad de recoger sus compras en cualquier momento
-                            conveniente para ellos.
+                                Ofrece a los clientes la posibilidad de recoger sus compras en cualquier momento
+                                conveniente para ellos.
                             </p>
                         </div>
                         <div class="servicio">
-                            <h3 class="nservicio"><span class="num">3</span>Integración con sistemas de pago y notificaciones</h3>
+                            <h3 class="nservicio"><span class="num">3</span>Integración con sistemas de pago y
+                                notificaciones</h3>
                             <p>
-                                Los casilleros inteligentes pueden estar conectados a sistemas de pago y notificaciones, lo que facilita la comunicación
+                                Los casilleros inteligentes pueden estar conectados a sistemas de pago y notificaciones,
+                                lo que facilita la comunicación
                                 con los clientes.
                             </p>
                         </div>
@@ -103,16 +121,11 @@
                             <img src="./img/proteccion.svg" alt="" class="img-ventajas">
                             <p>Compras seguras</p>
                         </div>
-                        
+
                         <div class="contenedor-img">
                             <img src="./img/notificaciones.svg" alt="" class="img-ventajas">
                             <p>Recibe notificaciones</p>
                         </div>
-                        
-                        
-                        
-                    </div>
-                    <div>
                     </div>
                 </div>
                 <div class="msj">
@@ -121,7 +134,7 @@
                     <img src="./img/shopping.svg" alt="">
                 </div>
             </section>
-            
+
         </main>
 
     </div>
@@ -146,8 +159,6 @@
     </div>
 
     </div>
-
-    <script src="js/script.js"></script>
     <script src="js/buscador.js"></script>
 </body>
 

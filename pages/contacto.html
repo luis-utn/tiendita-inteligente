@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>SmartPick - Contacto</title>
+    <title>Inicio</title>
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contenido.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/breadcrumbs.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,68 +25,121 @@
 
     <!--Header - menu-->
     <header>
-
         <div class="header-content">
-
             <div class="logo">
                 <h1>Smart<b>Pick</b></h1>
             </div>
-
             <div class="menu" id="show-menu">
-
                 <nav>
                     <ul>
-                        <li><a href="./index.html"> <i class="fas fa-home"></i> Inicio</a></li>
-                        <li><a href="./pages/productos.html"> <i class='bx bxs-cabinet'></i>Productos</a></li>
-                        <li class="menu-selected"><a href="./pages/contacto.html" class="text-menu-selected">
+                        <li><a href="../index.html"> <i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="../pages/productos.html"> <i class='bx bxs-cabinet'></i>Productos</a></li>
+                        <li class="menu-selected"><a href="../pages/contacto.html" class="text-menu-selected">
                                 <i class="fas fa-file-alt"></i>Contacto</a></li>
-                        <li><a href="./pages/ayuda.html"> <i class="fas fa-headset"></i>Ayuda</a></li>
+                        <li><a href="../pages/contacto.html#ayuda"> <i class="fas fa-headset"></i>Ayuda</a></li>
                     </ul>
                 </nav>
-
             </div>
-
             <div id="ctn-icon-search">
                 <i class="fas fa-search" id="icon-search"></i>
             </div>
-
         </div>
-
         <div id="icon-menu">
             <i class="fas fa-bars"></i>
         </div>
-
     </header>
-
-
     <div id="ctn-bars-search">
         <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
     </div>
-
-    <ul id="box-search">
-        <li><a href="#"><i class="fas fa-search"></i>Inicio</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>Productos</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>Ayuda</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>Contacto</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>Galeria</a></li>
-        <li><a href="#"><i class="fas fa-search"></i></a></li>
-    </ul>
+    <ul id="resultado-busqueda"></ul>
+    <div id="no-results-message" style="display: none;">No se encontraron resultados.</div>
+    
     <div id="cover-ctn-search"></div>
-    <!--Portada-->
+    
     <div class="container-all" id="move-content">
-        <div class="blog-container-cover">
-            <div class="container-info-cover">
-                <h1>¡Compras rápidas, Soluciones inteligentes!</h1>
-                <p>Una solución segura y eficiente para mejorar la experiencia de los usuarios en el proceso de compra.
-                </p>
-            </div>
-        </div>
+       
+        <main>
+            <section class="breadcrumb flat">
+                <div>
+                    <a href="../">Inicio</a>
+                    <a href="../pages/productos.html" >Productos</a>
+                    <a href="../pages/contacto.html" class="active">Contacto</a>
+                    <a href="../pages/contacto.html#ayuda">Ayuda</a>
+                </div>
+            </section>
+            
+                <h3 class="title">
+                    Ponte En Contacto Con Nosotros
+                </h3>
+            
+            <section class="contenedor-formulario">
+                <div class="enlace">
+                    <h1>Hablemos sin Compromiso</h1>
+                    <p class="letter">Conoce más sobre nuestros servicios.</p>
+                    <ul>
+                        <li class="formu"><a href=""></a> Click para chatear</li>
+                        <li class="formu"><a href=""></a> 55-55-55-55-55</li>
+                        <li class="formu"><a href=""></a> Correo@electronico</li>
+                        <li class="formu"><a href=""></a> Ubicacion</li>
+                        <li class="formu"><a href=""></a> CDMX </li>
+                    </ul>
+                </div>
+                <div class="formulario">
+                    
+                    <form class="form">
+                        <div class="labels">
+                            <input type="text" required="required">
+                            <span>Nombre</span>
+                        </div>
+                        <div class="labels">
+                            <input type="email" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="labels">
+                            <input type="text" required="required">
+                            <span>Telefono</span>
+                        </div>
+                        <div class="labels">
+                            <input type="text" required="required">
+                            <span >Mensaje</span>
+                        </div>
+                        <div class="labels">
+                            <input type="submit" value="Enviar" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section id="ayuda" class="conta">
+                <h3 class="title">
+                    ¿En que necesitas ayuda?
+                </h3>
+                <div class="card">
+                    <img src="../img/tuto.svg" alt="">
+                    <h4>tutoriales</h4>
+                    <p>Tenemos varios tutoriales para que domines complemntamente nuestra app</p>
+                    <a href="#" class="button">Leer mas</a>
+                </div>
+                <div class="card">
+                    <img src="../img/metodos_pago.svg" alt="">
+                    <h4>Metodos de Pago</h4>
+                    <p>Consulta los metodos de pago y nuestro aviso de privacidad</p>
+                    <a href="#" class="button">Leer mas</a>
+                </div>
+                <div class="card">
+                    <img src="../img/redes.svg" alt="">
+                    <h4>Redes</h4>
+                    <p>Mira en nuestras redes sociales si hemos resolvido anteriormente tu duda</p>
+                    <a href="#" class="button">Leer mas</a>
+                </div>
+            </section>
+        </main>
     </div>
     <div class="container-footer">
 
         <footer>
             <div class="logo-footer">
-                <img src="img/logo.png" alt="">
+                <img src="../img/logo.png" alt="">
             </div>
 
             <div class="redes-footer">
@@ -101,8 +156,7 @@
     </div>
 
     </div>
-
-    <script src="js/script.js"></script>
+    <script src="../js/buscador.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,8 @@
     <title>Inicio</title>
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/contenido.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <link rel="stylesheet" href="../css/breadcrumbs.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +33,7 @@
                     <ul>
                         <li><a href="../index.html"> <i class="fas fa-home"></i> Inicio</a></li>
                         <li><a href="../pages/productos.html"> <i class='bx bxs-cabinet'></i>Productos</a></li>
-                        <li class="menu-selected"><a href="../pages/contacto.html" class="text-menu-selected">
+                        <li><a href="../pages/contacto.html">
                                 <i class="fas fa-file-alt"></i>Contacto</a></li>
                         <li><a href="../pages/contacto.html#ayuda"> <i class="fas fa-headset"></i>Ayuda</a></li>
                     </ul>
@@ -50,27 +51,63 @@
         <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
     </div>
     <ul id="resultado-busqueda"></ul>
-
+    <div id="no-results-message" style="display: none;">No se encontraron resultados.</div>
+    
     <div id="cover-ctn-search"></div>
 
+    <section class="breadcrumb flat">
+    <div>
+        <a href="/index.html" class="a">Inicio</a>
+        <a href="./productos.html" class="active">Productos</a>
+        <a href="./contacto.html" class="a">Contacto</a>
+        <a href="./contacto.html#ayuda" class="a">Ayuda</a>
+    </div>
+    </section>
     <div class="container-all" id="move-content">
         
 
         <main>
-            <h1>Nuestros Productos</h1>
-            <span class="linea"></span>
+            <div class="gal">
+                <h1>Nuestros Productos</h1>
+                <span class="linea"></span>
+            </div>
             <section class="galeria">
-                <a href="#image1"><img src="../img/productos/smart-locker.png" alt=""></a>
-                <a href="#image2"><img src="../img/productos/smart-locker 2.png" alt=""></a>
-                <a href="#image3" "><img src=" ../img/productos/smart-locker 3.png" alt=""></a>
-                <a href="#image4"><img src="../img/productos/smart-locker 4.png" alt=""></a>
-                <a href="#image5"><img src="../img/productos/smart-locker 5.png" alt=""></a>
+                
+                <a href="#imagen1"><img src="../img/productos/smart-locker.png" alt=""></a>
+                <a href="#imagen2"><img src="../img/productos/smart-locker 2.png" alt=""></a>
+                <a href="#imagen3" "><img src=" ../img/productos/smart-locker 3.png" alt=""></a>
+                <a href="#imagen4"><img src="../img/productos/smart-locker 4.png" alt=""></a>
+                <a href="#imagen5"><img src="../img/productos/smart-locker 5.png" alt=""></a>
             
             </section>
-            <article class="light-box" id="image1">
-                <a href="#imagen2" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+            <article class="light-box" id="imagen1">
+                <a href="#imagen5" class="next"><i class='bx bx-left-arrow-alt'></i></a>
                 <img src="../img/productos/smart-locker.png" alt="">
+                <a href="#imagen2" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+                <a href="#" class="close">X</a>
+            </article>
+            <article class="light-box" id="imagen2">
+                <a href="#imagen1" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+                <img src="../img/productos/smart-locker 2.png" alt="">
+                <a href="#imagen3" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+                <a href="#" class="close">X</a>
+            </article>
+            <article class="light-box" id="imagen3">
+                <a href="#imagen2" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+                <img src="../img/productos/smart-locker 3.png" alt="">
+                <a href="#imagen4" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+                <a href="#" class="close">X</a>
+            </article>
+            <article class="light-box" id="imagen4">
+                <a href="#imagen3" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+                <img src="../img/productos/smart-locker 4.png" alt="">
                 <a href="#imagen5" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+                <a href="#" class="close">X</a>
+            </article>
+            <article class="light-box" id="imagen5">
+                <a href="#imagen4" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+                <img src="../img/productos/smart-locker 5.png" alt="">
+                <a href="#imagen1" class="next"><i class='bx bx-right-arrow-alt'></i></a>
                 <a href="#" class="close">X</a>
             </article>
         </main>
@@ -97,8 +134,6 @@
     </div>
 
     </div>
-
-    <script src="../js/script.js"></script>
     <script src="../js/buscador.js"></script>
 </body>
 

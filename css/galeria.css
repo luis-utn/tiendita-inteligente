@@ -8,11 +8,16 @@ body{
     font-family: "Raleway", "Helvetica Neue",;
 }
 
+.gal{
+    top: 50px;
+    display: block;
+}
+
 h1{
     font-weight: 400;
     text-align: center;
     padding: 20px 0;
-    font-size: 40px;
+    font-size: 40px; 
 }
 
 .linea{
@@ -103,3 +108,8 @@ h1{
 
 }
 
+@media screen and (max-width:800px){
+   .galeria{
+    width: 80%;
+   } 
+}
